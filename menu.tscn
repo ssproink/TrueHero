@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://djtplwxhi4ge3"]
+
+[ext_resource type="Theme" uid="uid://dl0gbdiw5jef3" path="res://ui_theme.tres" id="1_1kurd"]
+[ext_resource type="Script" path="res://menu.gd" id="1_m26dy"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m26dy")
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(225, 175)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ContinueGame" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_1kurd")
+disabled = true
+text = "CONTINUE GAME"
+
+[node name="NewGame" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_1kurd")
+text = "NEW GAME"
+
+[node name="Exit" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_1kurd")
+text = "EXIT"
+
+[connection signal="pressed" from="Buttons/ContinueGame" to="." method="_on_continue_game_pressed"]
+[connection signal="pressed" from="Buttons/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
