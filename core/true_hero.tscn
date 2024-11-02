@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://w83mdtvrv5kr"]
+
+[ext_resource type="PackedScene" uid="uid://botqnmy4r6yt4" path="res://core/entity.tscn" id="1_k0h3v"]
+[ext_resource type="Script" path="res://core/true_hero.gd" id="2_7q3r4"]
+
+[node name="TrueHero" instance=ExtResource("1_k0h3v")]
+script = ExtResource("2_7q3r4")
+max_sp = 100
+sp = 100
+sp_regen = 5
+level = 0
+
+[node name="SkillTimer" type="Timer" parent="." index="3"]
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="." index="4"]
+
+[connection signal="timeout" from="SkillTimer" to="." method="_on_skill_timer_timeout"]

@@ -1,0 +1,45 @@
+keys,ru
+# Меню,
+CONTINUE_GAME,Продолжить игру
+NEW_GAME,Новая игра
+EXIT,Выход
+
+# Статус,
+HP,ОЖ
+SP,ОВ
+PER_SEC,/с
+DEATHS,Смертей:
+
+# Controls,
+TIP_ROTATE,[мышь] Повернуться
+TIP_MOVING,[WASD/стрелки] Движение
+TIP_ATTACK,[ЛКМ] Атака
+TIP_DODGE_OR_USE,[Пробел] Увернуться/Использовать
+TIP_MENU,[Esc] Меню
+
+# Надписи на полу,
+A_TRUE_HERO_NEEDS_A_WEAPON_TO_FIGHT,Для битвы настоящему герою нужно оружие.
+NEVER_UNDERESTIMATE_YOUR_OPPONENT,Никогда не недооценивай противника.
+TIMELY_REST_BRINGS_BODY_AND_MIND_INTO_HARMONY,Своевременный отдых приводит в гармонию тело и разум.
+NO_OBSTACLE_CAN_STOP_A_TRUE_HERO,Никакое препятствие не остановит настоящего героя.
+THE_HERO_STANDS_IN_FRONT_OF_THE_VILLAINS_CHAMBERS,Герой стоит перед злодейскими покоями.
+THE_PRINCESS_OF_HELL_ONLY_LAUGHS_AFTER_HIM,Принцесса Ада лишь смеётся вслед.
+THE_CROAKING_OF_CROWS_FORETELLS_DEATH,Карканье ворон предвещает смерть.
+THE_DRAGON_HAS_FOUND_ITS_FINAL_REST,Дракон нашёл свой последний покой.
+AS_DID_THOSE_FOOLS_WHO_DARED_TO_BREAK_IT,"Как и те глупцы, что посмели его нарушить."
+THE_UNBREAKABLE_CYCLE_OF_LIFE_AND_DEATH,Нерушимый круговорот жизни и смерти.
+DEATH_GIVES_BIRTH_TO_A_NEW_LIFE,Смерть даёт начало новой жизни.
+THE_REWARD_AWAITS_ITS_HERO,Награда ждёт своего героя.
+BUT_THE_CAKE_IS_A_LIE,Но торт - это ложь.
+ONE_JOURNEY_ENDS_AND_A_NEW_ONE_BEGINS,Заканчивается одно путешествие и начинается новое.
+
+# Имена противников,
+SKELETON_SWORDSMAN,Скелет-мечник
+SKELETON_ARCHER,Скелет-лучник
+DEMONESS,Демонесса
+CROW,Ворона
+LAST_DRAGON,Последний дракон
+LAST_DRAGON_REVIVED,Последний дракон (возрождённый)
+LITTLE_DRAGON,Дракончик
+CAKE_FOR_A_TRUE_HERO,Торт для настоящего героя
+MIMIC_CAKE,Торт-мимик

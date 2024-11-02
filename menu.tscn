@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djtplwxhi4ge3"]
 
-[ext_resource type="Theme" uid="uid://dl0gbdiw5jef3" path="res://ui_theme.tres" id="1_1kurd"]
+[ext_resource type="Theme" uid="uid://dl0gbdiw5jef3" path="res://menu_theme.tres" id="1_1kurd"]
 [ext_resource type="Script" path="res://menu.gd" id="1_m26dy"]
 
 [node name="Menu" type="Control"]
@@ -32,7 +32,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource("1_1kurd")
 disabled = true
-text = "CONTINUE GAME"
+text = "CONTINUE_GAME"
 
 [node name="NewGame" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(200, 50)
@@ -40,7 +40,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource("1_1kurd")
-text = "NEW GAME"
+text = "NEW_GAME"
 
 [node name="Exit" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(200, 50)
@@ -49,6 +49,33 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme = ExtResource("1_1kurd")
 text = "EXIT"
+
+[node name="OtherButtons" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(593, 45)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+offset_right = 568.0
+grow_vertical = 0
+theme = ExtResource("1_1kurd")
+alignment = 2
+
+[node name="Language" type="OptionButton" parent="OtherButtons"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("1_1kurd")
+
+[node name="JamWebsite" type="LinkButton" parent="OtherButtons"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("1_1kurd")
+text = "Siberian Game Jam (https://sibgamejam.com/)"
+uri = "https://sibgamejam.com/"
 
 [connection signal="pressed" from="Buttons/ContinueGame" to="." method="_on_continue_game_pressed"]
 [connection signal="pressed" from="Buttons/NewGame" to="." method="_on_new_game_pressed"]

@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dl0gbdiw5jef3"]
+
+[ext_resource type="FontFile" uid="uid://daax1raemhr77" path="res://font/liberation-fonts-ttf-2.1.5/LiberationMono-Bold.ttf" id="1_c77n6"]
+[ext_resource type="FontFile" uid="uid://cnvphjlfb62fw" path="res://font/liberation-fonts-ttf-2.1.5/LiberationSans-Bold.ttf" id="1_fiyou"]
+
+[resource]
+Button/font_sizes/font_size = 22
+Button/fonts/font = ExtResource("1_fiyou")
+HBoxContainer/constants/separation = 10
+LinkButton/fonts/font = ExtResource("1_c77n6")
+OptionButton/font_sizes/font_size = 14
+OptionButton/fonts/font = ExtResource("1_fiyou")
+PopupMenu/fonts/font = ExtResource("1_fiyou")

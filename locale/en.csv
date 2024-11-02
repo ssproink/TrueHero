@@ -1,0 +1,45 @@
+keys,en
+# Menu,
+CONTINUE_GAME,Continue game
+NEW_GAME,New game
+EXIT,Exit
+
+# Status,
+HP,HP
+SP,SP
+PER_SEC,/s
+DEATHS,Deaths:
+
+# Controls,
+TIP_ROTATE,[mouse] Rotate
+TIP_MOVING,[WASD/arrows] Moving
+TIP_ATTACK,[Left mouse] Attack
+TIP_DODGE_OR_USE,[Space] Dodge/Use
+TIP_MENU,[Esc] Menu
+
+# Inscriptions on the floor,
+A_TRUE_HERO_NEEDS_A_WEAPON_TO_FIGHT,A hero needs a weapon to fight.
+NEVER_UNDERESTIMATE_YOUR_OPPONENT,Never underestimate your opponent.
+TIMELY_REST_BRINGS_BODY_AND_MIND_INTO_HARMONY,Timely rest brings body and mind into harmony.
+NO_OBSTACLE_CAN_STOP_A_TRUE_HERO,No obstacle can stop a true hero.
+THE_HERO_STANDS_IN_FRONT_OF_THE_VILLAINS_CHAMBERS,The hero stands in front of the villain's chambers.
+THE_PRINCESS_OF_HELL_ONLY_LAUGHS_AFTER_HIM,The princess of Hell only laughs after him.
+THE_CROAKING_OF_CROWS_FORETELLS_DEATH,The croaking of crows foretells death.
+THE_DRAGON_HAS_FOUND_ITS_FINAL_REST,The dragon has found its final rest.
+AS_DID_THOSE_FOOLS_WHO_DARED_TO_BREAK_IT,"As did those fools who dared to break it."
+THE_UNBREAKABLE_CYCLE_OF_LIFE_AND_DEATH,The unbreakable cycle of life and death.
+DEATH_GIVES_BIRTH_TO_A_NEW_LIFE,Death gives birth to a new life.
+THE_REWARD_AWAITS_ITS_HERO,The reward awaits its hero.
+BUT_THE_CAKE_IS_A_LIE,But the cake is a lie.
+ONE_JOURNEY_ENDS_AND_A_NEW_ONE_BEGINS,One journey ends and a new one begins.
+
+# Enemy Names,
+SKELETON_SWORDSMAN,Skeleton Swordsman
+SKELETON_ARCHER,Skeleton Archer
+DEMONESS,Demoness
+CROW,Crow
+LAST_DRAGON,The Last Dragon
+LAST_DRAGON_REVIVED,The Last Dragon (revived)
+LITTLE_DRAGON,Little Dragon
+CAKE_FOR_A_TRUE_HERO,Cake for a True Hero
+MIMIC_CAKE,Mimic Cake
