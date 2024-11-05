@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://by1484ld7qbxg"]
+[gd_scene load_steps=6 format=3 uid="uid://by1484ld7qbxg"]
 
 [ext_resource type="Script" path="res://core/hud.gd" id="1_0tt2l"]
 [ext_resource type="Theme" uid="uid://mw3xbgvcfa5s" path="res://core/hud_theme.tres" id="1_qfcvq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3phh"]
+bg_color = Color(0.498039, 0, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8gb47"]
 bg_color = Color(0.588235, 0, 0, 1)
@@ -28,6 +31,51 @@ offset_top = -4.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_qfcvq")
+
+[node name="EnemyBar" type="ProgressBar" parent="Bars"]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/fill = SubResource("StyleBoxFlat_b3phh")
+step = 1.0
+value = 100.0
+show_percentage = false
+
+[node name="Labels" type="HBoxContainer" parent="Bars/EnemyBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -9.5
+offset_right = 54.0
+offset_bottom = 9.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BarName" type="Label" parent="Bars/EnemyBar/Labels"]
+layout_mode = 2
+theme = ExtResource("1_qfcvq")
+theme_override_colors/font_color = Color(1, 0.588235, 1, 1)
+text = "ENEMY"
+
+[node name="Value" type="Label" parent="Bars/EnemyBar/Labels"]
+layout_mode = 2
+theme = ExtResource("1_qfcvq")
+theme_override_colors/font_color = Color(1, 0.588235, 1, 1)
+text = "100"
+
+[node name="ValueRegeneration" type="Label" parent="Bars/EnemyBar/Labels"]
+layout_mode = 2
+theme = ExtResource("1_qfcvq")
+theme_override_colors/font_color = Color(1, 0.588235, 1, 1)
+text = "+0/s"
+
+[node name="Placeholder" type="Control" parent="Bars"]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
 
 [node name="ControlsTip" type="HBoxContainer" parent="Bars"]
 layout_mode = 2
@@ -200,6 +248,7 @@ theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "FPS"
 
 [node name="FPSRefreshTimer" type="Timer" parent="FPSCounter"]
+wait_time = 0.5
 autostart = true
 
 [connection signal="timeout" from="FPSCounter/FPSRefreshTimer" to="." method="_on_fps_refresh_timer_timeout"]
