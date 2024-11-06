@@ -33,6 +33,7 @@ grow_vertical = 0
 theme = ExtResource("1_qfcvq")
 
 [node name="EnemyBar" type="ProgressBar" parent="Bars"]
+visible = false
 custom_minimum_size = Vector2(0, 15)
 layout_mode = 2
 size_flags_vertical = 1

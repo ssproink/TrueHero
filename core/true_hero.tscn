@@ -1,7 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://w83mdtvrv5kr"]
+[gd_scene load_steps=7 format=3 uid="uid://w83mdtvrv5kr"]
 
 [ext_resource type="PackedScene" uid="uid://botqnmy4r6yt4" path="res://core/entity.tscn" id="1_k0h3v"]
 [ext_resource type="Script" path="res://core/true_hero.gd" id="2_7q3r4"]
+[ext_resource type="Texture2D" uid="uid://cxilqqsva3y68" path="res://sprites/true_hero_dodge_bubble.tres" id="3_0o7n8"]
+[ext_resource type="Texture2D" uid="uid://brsdsbmm15g4f" path="res://sprites/true_hero_bubble.tres" id="3_kn2t6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_38uy3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0o7n8")
+}],
+"loop": true,
+"name": &"dodge",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_kn2t6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gk56u"]
+radius = 40.0
 
 [node name="TrueHero" instance=ExtResource("1_k0h3v")]
 script = ExtResource("2_7q3r4")
@@ -10,9 +34,20 @@ sp = 100
 sp_regen = 5
 level = 0
 
-[node name="SkillTimer" type="Timer" parent="." index="3"]
+[node name="SkillTimer" type="Timer" parent="." index="2"]
 one_shot = true
 
-[node name="Camera2D" type="Camera2D" parent="." index="4"]
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
+position_smoothing_enabled = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." index="4"]
+position = Vector2(15, 0)
+rotation = 1.5708
+sprite_frames = SubResource("SpriteFrames_38uy3")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
+shape = SubResource("CircleShape2D_gk56u")
 
 [connection signal="timeout" from="SkillTimer" to="." method="_on_skill_timer_timeout"]

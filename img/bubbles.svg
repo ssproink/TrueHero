@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="bubbles.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.2261802"
+     inkscape:cx="292.65376"
+     inkscape:cy="125.77598"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient3128"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#483e37;stop-opacity:1;"
+         offset="0"
+         id="stop3126" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1026"
+       style="fill:#666666">
+      <path
+         style="fill:#666666;stroke:#000000;stroke-width:1"
+         d="M 1.3229174,15.874999 H 19.843751 L 10.583333,1.3229167 Z"
+         id="path954" />
+      <circle
+         style="fill:#666666;stroke:#000000;stroke-width:1"
+         id="path788"
+         cx="10.583333"
+         cy="19.104166"
+         r="10" />
+    </g>
+    <g
+       id="g1050"
+       style="fill:#666666">
+      <g
+         id="g1043"
+         style="fill:#666666">
+        <g
+           id="g1037"
+           style="fill:#666666">
+          <g
+             id="g1032"
+             transform="translate(22.489584)"
+             style="stroke:#ffff00;fill:#666666">
+            <path
+               style="fill:#666666;stroke:#ffff00;stroke-width:1"
+               d="M 1.3229174,15.874999 H 19.843751 L 10.583333,1.3229167 Z"
+               id="path1028" />
+            <circle
+               style="fill:#666666;stroke:#ffff00;stroke-width:1"
+               id="circle1030"
+               cx="10.583333"
+               cy="19.104166"
+               r="10" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g1100"
+       style="fill:#800000"
+       transform="translate(44.979167)">
+      <path
+         style="fill:#800000;stroke:#000000;stroke-width:1"
+         d="M 1.3229174,15.874999 H 19.843751 L 10.583333,1.3229167 Z"
+         id="path1096" />
+      <circle
+         style="fill:#800000;stroke:#000000;stroke-width:1"
+         id="circle1098"
+         cx="10.583333"
+         cy="19.104166"
+         r="10" />
+    </g>
+    <rect
+       style="fill:#800000;stroke:#000000;stroke-width:1"
+       id="rect1223"
+       width="15.875"
+       height="15.875"
+       x="2.6458333"
+       y="35.71875" />
+    <circle
+       style="fill:#ff0000;stroke:#000000;stroke-width:1"
+       id="path1277"
+       cx="33.072918"
+       cy="43.65625"
+       r="5" />
+    <rect
+       style="fill:#917c6f;fill-opacity:1;stroke:#000000;stroke-width:1"
+       id="rect854"
+       width="29.104166"
+       height="29.104166"
+       x="76.729164"
+       y="1.3229166" />
+    <rect
+       style="fill:#483e37;fill-opacity:1;stroke:#000000;stroke-width:1"
+       id="rect854-3"
+       width="29.104166"
+       height="29.104166"
+       x="108.47916"
+       y="1.3229166" />
+    <path
+       id="rect854-3-6"
+       style="fill:#483e37;fill-opacity:1;stroke:#000000;stroke-width:1"
+       d="M 154.78125 1.3229167 L 140.22917 15.875 L 140.22917 30.427083 L 169.33333 30.427083 L 169.33333 1.3229167 L 154.78125 1.3229167 z " />
+    <path
+       style="fill:#917c6f;stroke:#b3b3b3;stroke-width:2;stroke-dasharray:none"
+       d="M 72.760416,1.3229166 V 44.979166"
+       id="path1067" />
+  </g>
+</svg>

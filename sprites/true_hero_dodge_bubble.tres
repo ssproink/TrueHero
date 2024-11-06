@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cxilqqsva3y68"]
+
+[ext_resource type="Texture2D" uid="uid://satne45l81pv" path="res://img/bubbles.svg" id="1_eattp"]
+
+[resource]
+atlas = ExtResource("1_eattp")
+region = Rect2(85, 1, 80, 111)

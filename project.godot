@@ -21,7 +21,6 @@ run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/image="res://img/Logo White with margins.png"
 config/icon="res://icon.svg"
-boot_splash/minimum_display_time=2000
 
 [input]
 

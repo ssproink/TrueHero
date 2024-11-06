@@ -1,7 +1,7 @@
 class_name TrueHero
 extends Entity
 
-const SPEED = 300.0
+const SPEED = 500
 
 signal SPChanged
 
@@ -44,7 +44,7 @@ func use_skill(skill : Skill):
 	sp -= skill_cost[skill]
 
 func is_busy() -> bool:
-	return current_skill != Skill.NONE
+	return current_skill != Skill.NONE and current_skill != Skill.ATTACK
 
 func _on_skill_timer_timeout() -> void:
 	current_skill = Skill.NONE
@@ -56,7 +56,7 @@ func _on_bashed() -> void:
 func _ready() -> void:
 	Bash.connect(_on_bashed)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		velocity = Vector2.ZERO
 		use_skill(Skill.DODGE)
@@ -69,3 +69,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity = Vector2.ZERO
 	move_and_slide()
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		look_at(get_global_mouse_position())

@@ -5,9 +5,9 @@ extends Control
 		true_hero = our_hero
 		if true_hero != null:
 			true_hero.HPChanged.connect(hp_changed)
-			$Bars/HPBar/Labels/ValueRegeneration.text = tr("+%dPER_SEC" % true_hero.hp_regen)
+			$Bars/HPBar/Labels/ValueRegeneration.text = "+%d%s" % [true_hero.hp_regen * 2, tr("PER_SEC")]
 			true_hero.SPChanged.connect(sp_changed)
-			$Bars/SPBar/Labels/ValueRegeneration.text = tr("+%dPER_SEC" % true_hero.sp_regen)
+			$Bars/SPBar/Labels/ValueRegeneration.text = "+%d%s" % [true_hero.sp_regen * 2, tr("PER_SEC")]
 
 @export var boss : Entity :
 	set(another_boss):
